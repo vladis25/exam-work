@@ -1,0 +1,427 @@
+@import './header';
+@import './footer';
+
+
+
+.grid {
+    margin: 0 auto;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 100px;
+    gap: 40px;
+}
+ div {    
+    .prime-1 {
+        background-color: $prime-1;
+    }
+    .prime-2 {
+        background-color: $prime-2;
+    }
+    .prime-3 {
+        background-color: $prime-3;
+    }
+    .prime-4 {
+        background-color: $prime-4;
+    }
+    .pr-1-light-1 {
+        background-color: $pr-1-light-1;
+    }
+    .pr-1-light-2 {
+        background-color: $pr-1-light-2;
+    }
+    .pr-1-light-3 {
+        background-color: $pr-1-light-3;
+    }
+    .pr-2-light-1 {
+        background-color: $pr-2-light-1;
+    }
+    .pr-2-light-2 {
+        background-color: $pr-2-light-2;
+    }
+    .pr-2-light-3 {
+        background-color: $pr-2-light-3;
+    }
+    .pr-3-light-1 {
+        background-color: $pr-3-light-1;
+    }
+    .pr-3-light-2 {
+        background-color: $pr-3-light-2;
+    }
+    .pr-3-light-3 {
+        background-color: $pr-3-light-3;
+    }
+    .pr-4-light-1 {
+        background-color: $pr-4-light-1;
+    }
+    .pr-4-light-2 {
+        background-color: $pr-4-light-2;
+    }
+    .pr-4-light-3 {
+        background-color: $pr-4-light-3;
+    }
+    .pr-1-dark-1 {
+        background-color: $pr-1-dark-1;
+    }
+    .pr-1-dark-2 {
+        background-color: $pr-1-dark-2;
+    }
+    .pr-1-dark-3 {
+        background-color: $pr-1-dark-3;
+    }
+    .pr-2-dark-1 {
+        background-color: $pr-2-dark-1;
+    }
+    .pr-2-dark-2 {
+        background-color: $pr-2-dark-2;
+    }
+    .pr-2-dark-3 {
+        background-color: $pr-2-dark-3;
+    }
+    .pr-3-dark-1 {
+        background-color: $pr-3-dark-1;
+    }
+    .pr-3-dark-2 {
+        background-color: $pr-3-dark-2;
+    }
+    .pr-3-dark-3 {
+        background-color: $pr-3-dark-3;
+    }
+    .pr-4-dark-1 {
+        background-color: $pr-4-dark-1;
+    }
+    .pr-4-dark-2 {
+        background-color: $pr-4-dark-2;
+    }
+    .pr-4-dark-3 {
+        background-color: $pr-4-dark-3;
+    }
+}
+h1 {
+    @include headen;
+    font-weight: 900;
+}
+h2 {
+    @include headen;
+    font-size: 33px;
+}
+h2:hover {
+    padding: 5px;
+    background-color: $pr-1-light-1;
+    cursor: pointer;
+    width: fit-content;
+}
+
+h3 {
+    @include headen;
+    font-size: 27px;
+}
+
+h4 {
+    @include headen;
+    font-size: 22px;
+}
+h5 {
+    @include headen;
+    font-size: 17px;
+}
+h6 {
+    @include headen;
+    font-size: 15px;
+}
+p {
+    font-size: 14px;
+    color: $pr-4-dark-2;
+    font-family: 'Pop-regular';
+}
+.subtitle {
+    font-size: 20px;
+    color: $pr-4-dark-2;
+    font-family: 'Pop-regular';
+}
+.subtitle:hover {
+    padding: 10px;
+    background-color: $pr-1-light-1;
+    font-family: 'Pop-regular';
+    width: fit-content;
+}
+.list li {
+    @include headen;
+    font-size: 15px;
+    list-style-type: none;
+
+}
+
+
+.list li {
+    position: relative;
+    padding-left: 35px;
+}
+
+.list li::before {
+    content: "✓";
+    color:white;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: $pr-1-light-1;
+    border-radius: 50%;
+
+}
+
+.Quotation {
+    @include headen;
+    font-size: 17px;
+    padding: 10px 20px ;
+    background-color: $pr-1-light-3;
+    color:$pr-1-light-1;
+    border-left: 2px solid $prime-1;
+}
+
+// input
+
+.inputs input, select{
+    height: 30px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 4px ;
+    border: 2px solid $pr-4-light-2;
+}
+
+.first,
+.second{
+    margin: 40px;
+    background-color: $pr-4-light-3;
+}
+.first:hover{
+    background-color:white;
+}
+.second:hover{
+    border: 2px solid $pr-1-light-1;
+    background-color:white;
+}
+.first:active,
+.second:active {
+    border: 2px solid $pr-1-light-1;
+}
+.second::marker {
+    color: $pr-4-light-3;
+}
+
+input:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+.wrap .success {
+    border: 2px solid $pr-3-dark-1;
+    color: $pr-3-dark-1;
+    &::placeholder {
+        font-weight: bold;
+        color: $pr-3-dark-1;
+    }
+}
+
+.wrap .error {
+    border: 2px solid $pr-2-light-2;
+    color: $pr-2-light-1;
+        &::placeholder {
+        font-weight: bold;
+        color: $pr-2-light-1;
+    }
+}
+
+.wrapp input{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    outline: auto;
+}
+
+.gal,
+.round {
+    color: $pr-4-light-2;
+    outline: inherit;
+}
+
+.gal:hover,
+.round:hover {
+    color: $pr-1-light-1;
+
+}
+.gal:active,
+.round:active {
+    background-color: $pr-1-light-1;
+    color: $pr-1-light-1;
+}
+.gal:disabled,
+.round:disabled {
+    background-color: $pr-4-light-2;
+    color: $pr-4-light-2;
+}
+.buttons button{
+    margin: 10px;
+    border-radius: 4px ;
+    text-align: center;
+    height: 40px;
+}
+.size {
+    width: 250px;
+}
+
+.orange{
+    background-color: $prime-2;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+.orange:hover{
+    background-color: $pr-2-light-1;
+}
+.orange:disabled{
+    background-color: $pr-4-light-2;
+}
+.blue {
+    background-color: $prime-1;
+    color: white;
+    border: none;
+}
+.big-blue{
+    background-color: $prime-1;
+    width: 320px;
+    color: white;
+    border: none;
+}
+.big-blue:hover,
+.blue:hover{
+    background-color: $pr-1-light-1;
+}
+button:disabled{
+    background-color: $pr-4-light-2;
+}
+.outlined-orange {
+    border: 2px solid $prime-2;
+    color: $prime-2;
+    text-transform: uppercase;
+    background-color: transparent;
+    &:hover{
+        border: none;
+        background-color: $pr-2-light-1;
+        color: white;
+    }
+}
+.outlined-blue {
+    border: 2px solid $prime-1;
+    color: $prime-1;
+    text-transform: uppercase;
+    background-color: transparent;
+    &:hover{
+        border: none;
+        background-color: $pr-1-light-1;
+        color: white;
+    }
+}
+.orange-small{
+    background-color: $prime-2;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+.orange-small:hover{
+    background-color: $pr-2-light-1;
+}
+.orange-small:disabled{
+    background-color: $pr-4-light-2;
+}
+.blue-small {
+    background-color: $prime-1;
+    color: white;
+    border: none;
+}
+.big-blue-small{
+    background-color: $prime-1;
+    width: 180px;
+    color: white;
+    border: none;
+}
+.big-blue-small:hover,
+.blue-small:hover{
+    background-color: $pr-1-light-1;
+}
+
+.outlined-orange-small {
+    border: 2px solid $prime-2;
+    color: $prime-2;
+    text-transform: uppercase;
+    background-color: transparent;
+    &:hover{
+        border: none;
+        background-color: $pr-2-light-1;
+        color: white;
+    }
+}
+.outlined-blue-small {
+    border: 2px solid $prime-1;
+    color: $prime-1;
+    text-transform: uppercase;
+    background-color: transparent;
+    &:hover{
+        border: none;
+        background-color: $pr-1-light-1;
+        color: white;
+    }
+}
+.size-sm {
+    width: 150px;
+    height: 30px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 14px;
+  text-decoration: none;
+}
+.pagination a:hover {
+    color: white;
+    background-color: $prime-1;
+    border-radius: 50%;
+}
+.logo ul {
+    
+    display: flex;
+    & li {
+        list-style: none;
+        margin-right: 10px;
+        & img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.logo-white {
+    background-color: aqua;
+    width:fit-content;
+    border-radius: 0%;
+}
+.border li{
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 50%;
+}
+.background li{
+    background-color: $pr-1-dark-2;
+    padding: 12px;
+    border-radius: 50%;
+
+}
