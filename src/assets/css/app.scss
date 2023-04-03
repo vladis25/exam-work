@@ -61,8 +61,7 @@
     background-color: $pr-1-light-3;
     background-image: url('../img/img_cloud.png');
     width: 100%;
-    height: 200px;
-    background-size: contain;
+    height:fit-content;
 }
 
 .head-md {
@@ -72,26 +71,34 @@
         font-weight: 500;
         font-size: 40px;
         font-family: inherit;
+        color: $prime-1;
     }
-    & ul {
-        display: flex;
-        width: fit-content;
-        list-style: none;
-        text-transform: uppercase;
+    & h3 {
         font-family: system-ui;
-        padding-left: 0;
-        & li {
-            color: $prime-4;
-            margin-right: 15px;
-        }
-        & .list::after {
-            content:'❯';
-            margin-left: 15px;
-
-        }
-        & .blog {
-            color: $pr-4-dark-3;
-        }
+        font-size: 40px;
     }
+    // & ul {
+    //     display: flex;
+    //     width: fit-content;
+    //     list-style: none;
+    //     text-transform: uppercase;
+    //     font-family: system-ui;
+    //     padding-left: 0;
+    //     & li {
+    //         color: $prime-4;
+    //         margin-right: 15px;
+    //     }
+    //     & .list::after {
+    //         content:'❯';
+    //         margin-left: 15px;
 
+    //     }
+    //     & .blog {
+    //         color: $pr-4-dark-3;
+    //     }
+    // }
+
+}
+.md {
+    display: flex;
 }
