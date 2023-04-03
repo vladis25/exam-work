@@ -266,12 +266,16 @@ select:focus-visible {
 }
 .size {
     width: 250px;
+    padding: 12px 12px;
+    border-radius: 4px;
 }
 
 .orange{
     background-color: $prime-2;
     color: white;
     border: none;
+    font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .orange:hover{
