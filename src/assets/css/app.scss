@@ -113,3 +113,14 @@
     border-top: 1px solid $pr-4-light-1;
     padding-top: 30px;
 }
+.navigation {
+    display: flex;
+
+    & label {
+        display: inline-block;
+        width: fit-content;
+    }
+    & select {
+        display: block;
+    }
+}
