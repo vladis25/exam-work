@@ -47,28 +47,52 @@
             </div>
         </div>
     </div>
+<div class="container-xl container-lg container-md ">
     <div class="navigation inputs">
-        <label for="select">Type of paper</label>
-        <select class="second" placeholder='placeholder text'>
-            <option>placeholder text</option>
-            <option>Saab</option>
-            <option>Fiat</option>
-            <option>Audi</option>
-        </select>
-        <label for="Writer level"></label>
-        <select class="second" placeholder='placeholder text'>
-            <option>Hight school</option>
-            <option>school</option>
-            <option>low school</option>
-        </select>
-        <label for="Writer level"></label>
-        <select class="second" placeholder='placeholder text'>
-            <option>21 days</option>
-            <option>1 month</option>
-            <option>3 month</option>
-            <option>5 month</option>
-        </select>
-        <button class="big-blue"></button>
+        <ul>
+                <li><label for="select">Type of paper</label></li>
+            <li>
+                <select name="name" class="second" placeholder='placeholder text'>
+                <option>placeholder text</option>
+                <option>Saab</option>
+                <option>Fiat</option>
+                <option>Audi</option>
+                </select>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label for="Writer level">Writer level</label>
+            </li>
+            <li>
+                <select class="second" placeholder='placeholder text'>
+                    <option>Hight school</option>
+                    <option>school</option>
+                    <option>low school</option>
+                 </select>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label for="">Urgency</label>
+            </li>
+            <li>
+                <select class="second" placeholder='placeholder text'>
+                    <option>21 days</option>
+                    <option>1 month</option>
+                    <option>3 month</option>
+                    <option>5 month</option>
+                </select>
+            </li>
+        </ul>
+        <ul>
+            <li><label for="">Number of pages</label></li>
+            <li><input type="number"></li>
+        </ul>
+        <div class="button2">
+            <button class="blue">Continue</button>
+        </div>
     </div>
+</div>
 </header>
 {% endblock %}

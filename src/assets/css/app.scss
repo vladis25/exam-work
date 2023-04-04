@@ -113,3 +113,16 @@
     border-top: 1px solid $pr-4-light-1;
     padding-top: 30px;
 }
+.navigation {
+    display: inline-flex;
+    & ul {
+        list-style-type: none;
+    }
+    & button {
+        margin-left: 20px;
+    }
+}
+.button2 {
+    align-items: center;
+    vertical-align: middle;
+}
