@@ -220,6 +220,7 @@
     grid-template-columns: 250px 250px 250px 250px;
     justify-content: space-around;
     & div {
+        border-right: 2px solid $pr-1-light-3;
         margin-top: 50px;
         padding: 20px;
         font-family: system-ui;
@@ -235,5 +236,8 @@
             font-family: system-ui;
             font-size: 13px;
         }
+    }
+    & div::before {
+        
     }
 }
