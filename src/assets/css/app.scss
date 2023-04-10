@@ -253,6 +253,20 @@
 .space-rocket {
     width: 150px;
     position: absolute;
-    left: 200px;
-    margin-top: -70px;
+    left: 15%;
+    margin-top: -3%;
+}
+.block-sell {
+    display: grid;
+    margin: 0 auto;
+    width: 40%;
+    grid-template-columns: 70% 30%;
+    & .block-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        & .page {
+            
+        }
+    }
 }
