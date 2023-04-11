@@ -1,0 +1,52 @@
+.wrap-ft {
+    display: flex;
+    align-items: center;
+    & ul {
+        display: flex;
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: system-ui;
+        & li {
+            margin-top: 15px;
+            margin-right: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    }
+}
+.list-fut {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid $pr-1-light-4;
+    border-bottom: 1px solid $pr-1-light-4;
+        & p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            font-family: system-ui;
+        }
+        & ul {
+            margin: 20px auto;
+            list-style-type: none;
+            color: white;
+            font-family: system-ui;
+            & li {
+                margin-right: 30px;
+                cursor: pointer;
+                font-size: 12px;
+            }
+        }
+}
+.nightmare{
+    color: white;
+    & ul {
+        color: white;
+        & li {
+            color: white;
+        }
+    }    
+}

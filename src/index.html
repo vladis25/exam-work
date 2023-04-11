@@ -192,41 +192,43 @@
         </div>
     </div>
 </div>
-    <div class="container-xl container-lg container-md container-sm cover3">
-        <a href="">05 Testimonials</a>
+<div class="container-xl container-lg container-md container-sm cover3">
+    <a href="">05 Testimonials</a>
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+   <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <h2>What our clients says</h2>
             <img src="./assets/img/avatar.png" >
-            <div class="text">Using BestEssayService.net was possibly the best choice of my academic career. Even though I work full-time, I managed to submit all my assignments on time owing to the broad array of services on offer. No matter what written work I needed, help was available. I would give a full ten marks.</div>
+            <div class="">Using BestEssayService.net was possibly the best choice of my academic career. Even though I work full-time, I managed to submit all my assignments on time owing to the broad array of services on offer. No matter what written work I needed, help was available. I would give a full ten marks.</div>
+                <h3>Angela Row</h3><br>
+                <span class="date">02 june 2021 at 11:42</span>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <h2>What our clients says</h2>
-            <img src="./assets/img/avatar.png">
-            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, in deleniti iusto voluptatem  ratione enim culpa facere distinctio quidem facilis corporis modi illum. Rem est dolor non asperiores perferendis.</div>
-            <div>
-                <h3>Lorna Grey</h3><br>
-                <span>20 apr 2016 at 8:23</span>
-            </div>
+            <img src="./assets/img/avatar.png" >
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, in deleniti iusto voluptatem  ratione enim culpa facere distinctio quidem facilis corporis modi illum. Rem est dolor non asperiores perferendis.</div>
+            <h3>Lorna Grey</h3><br>
+            <span class="date">23 june 2021 at 16:40</span>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <h2>What our clients says</h2>
             <img src="./assets/img/avatar.png" >
-            <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil unde suscipit quod fugit odit dolores nobis distinctio, voluptatibus sequi, ipsam maiores deleniti provident iste impedit adipisci quis! Expedita sunt suscipit reprehenderit cum voluptatem velit quo, tenetur, enim atque numquam et?</div>
+            <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil unde suscipit quod fugit odit dolores nobis distinctio, voluptatibus sequi, ipsam maiores deleniti provident iste impedit adipisci quis! Expedita sunt suscipit reprehenderit cum voluptatem velit quo, tenetur, enim atque numquam et?</div>
+            <h3>Soren</h3><br>
+            <span class="date">01 apr 2021 at 21:00</span>
         </div>
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+    </div>
         <br>
 
         <!-- The dots/circles -->
@@ -235,6 +237,35 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 {% endblock %}
