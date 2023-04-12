@@ -19,8 +19,8 @@
 .list-fut {
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid $pr-1-light-4;
-    border-bottom: 1px solid $pr-1-light-4;
+    border-top: 1px solid $pr-1-light-3;
+    border-bottom: 1px solid $pr-1-light-3;
         & p {
             margin-top: 10px;
             margin-bottom: 20px;
@@ -43,10 +43,12 @@
 }
 .nightmare{
     color: white;
+        margin-top: 20px;
+        padding-bottom: 20px;
     & ul {
-        color: white;
-        & li {
-            color: white;
-        }
-    }    
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        font-size: 14px;
+    }
 }
